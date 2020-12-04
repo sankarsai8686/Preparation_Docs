@@ -1,0 +1,81 @@
+Modifiers : https://stackabuse.com/non-access-modifiers-in-java/
+
+Non-Access Amodifiers
+https://javabeginnerstutorial.com/core-java-tutorial/non-access-modifiers-in-java/
+https://javaconceptoftheday.com/access-and-non-access-modifiers-in-java/
+
+
+All About Overriding in Java:  https://dzone.com/articles/all-about-overriding-in-java
+
+SITES TO LEARN JAVA
+==================
+https://javarevisited.blogspot.com/
+https://www.javacodegeeks.com/category/java/core-java
+https://javabeginnerstutorial.com/core-java-tutorial/
+
+https://www.studytonight.com/java/
+
+https://www.codejava.net/
+
+http://www.corejavaguru.com/java/basic/nonaccessmodifiers
+
+
+https://javahungry.blogspot.com/2017/09/25-different-number-pattern-programs-in-java.html
+
+
+https://javahungry.blogspot.com/2018/11/method-overloading-in-java-with-examples.html
+
+
+Rules for Exception handling w.r.t Method Overriding in Java : (GOOD)
+https://www.benchresources.net/rules-for-exception-handling-w-r-t-method-overriding-in-java/
+
+https://www.benchresources.net/java/oops-concepts/
+
+Logical Programmers
+------------------
+https://javarevisited.blogspot.com/2017/07/top-50-java-programs-from-coding-Interviews.html
+https://www.javatpoint.com/java-programs
+https://javaconceptoftheday.com/java-interview-programs-with-solutions/
+https://javahungry.blogspot.com/2018/09/70-top-java-interview-programs-with-coding-solutions.html
+https://java2blog.com/java-interview-programs/
+https://www.w3resource.com/java-exercises/basic/index.php
+
+
+
+https://www.softwaretestinghelp.com/java-coding-interview-programs/
+
+
+https://grokonez.com/java/java-core/ways-to-create-a-java-object
+
+
+https://crunchify.com/what-are-all-the-different-ways-to-create-an-object-in-java/
+
+
+https://javaconceptoftheday.com/how-hashmap-works-internally-in-java/
+https://www.netjstech.com/2015/05/how-hashmap-internally-works-in-java.html
+https://javahungry.blogspot.com/2013/08/hashing-how-hash-map-works-in-java-or.html
+
+
+https://www.java2novice.com/spring-boot/springbootapplication-annotation/
+https://www.netjstech.com/2018/08/difference-between-controller-restcontroller-annotation-spring.html
+
+
+http://net-informations.com/java/cjava/cfaq.htm
+https://knpcode.com/java/multi-threading/difference-between-sleep-and-yield-methods-in-java/    - Good
+https://www.javacodemonk.com/design-an-immutable-class-that-has-an-java-util-date-member-a66d149a     - Good
+
+https://jstobigdata.com/spring/dependency-injection-autowired-resource-and-inject/   -- Spring
+https://www.boraji.com/spring-primary-annotation-example -- spring 
+
+https://octoperf.com/blog/2018/02/22/spring-boot-rest-tutorial/ - Spring Boot
+https://www.vogella.com/tutorials/SpringBoot/article.html
+
+
+https://www.netjstech.com/2020/07/difference-stackoverflowerror-outofmemoryerror-java.html   - JAVA - GOOD
+
+
+https://www.javamadesoeasy.com/ - JAVA
+
+https://www.wisdomjobs.com/e-university/java-garbage-collection-interview-questions.html
+
+https://www.javapedia.net/Garbage-collection
