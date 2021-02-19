@@ -1,0 +1,69 @@
+// Target main element
+// const main = document.getElementById("main");
+// const fetchPromise = fetch("https://ghibliapi.herokuapp.com/people");
+// //console.log(fetchPromise);
+// fetchPromise.then(response => {
+//     return response.json();
+//   }).then(people => {
+//     const names = people.map(person => person.name).join("\n");
+//   console.log(names);
+//   main.innerHTML = listOfNames(people);
+//   });
+//   function listOfNames(people) {
+//     const names = people.map(person => `<li>${person.name}</li>`).join("\n");
+//     return `<ul>${names}</ul>`
+//   }
+
+// const displayJoke = document.getElementById('displayJoke');
+// const generateJokes = () =>{
+//     const setheaders = {
+//         headers :{
+//             Accept : "application/json"
+//         }
+        
+//     }
+//    // console.log('generateJokes');
+//    displayJoke.innerHTML = "Loading........................";
+//     fetch('https://icanhazdadjoke.com',setheaders)
+//     .then((res) => res.json())
+//     .then((data) => {
+//        // console.log(data.joke);
+//         displayJoke.innerHTML = data.joke;
+//     })
+//     .catch((error) =>{
+//         console.log("error : "+error);
+//     })
+// }
+
+
+
+
+// const displayJoke = document.getElementById('displayJoke');
+// const generateJokes = async () =>{
+   
+//    try{
+//     const setheaders = {
+//         headers :{
+//             Accept : "application/json"
+//         }
+        
+//     }
+//    displayJoke.innerHTML = "Loading........................";
+//     const res = await fetch('https://icanhazdadjoke.com',setheaders);
+//     const data = await res.json();
+//     displayJoke.innerHTML = data.joke;
+//    }
+//     catch(error)
+//     {
+//         console.log(error);
+//         displayJoke.innerHTML = "SOME PROBLEM OCCURRED !!! "
+//     }
+    
+// }
+
+// generateJokes();
+// btn.addEventListener('click',generateJokes);
+
+
+
+Reference: https://medium.com/@armando_amador/how-to-make-http-requests-using-fetch-api-and-promises-b0ca7370a444
