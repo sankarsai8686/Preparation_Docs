@@ -1,0 +1,112 @@
+https://www.boredapi.com/api/activity
+			//https://api.imgflip.com/get_memes
+			//https://randomuser.me/api/
+			String API_URI = "https://icanhazdadjoke.com";
+			//String API_URI = "https://restcountries.eu/rest/v2/name/nepal";
+      
+      
+      
+      package com.cgi.basic;
+
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.cgi.util.GeneralUtils;
+
+public class CallAPI {
+
+	public static void main(String[] args) {
+		
+		try
+		{
+			//https://www.boredapi.com/api/activity
+			//https://api.imgflip.com/get_memes
+			//https://randomuser.me/api/
+			String API_URI = "https://icanhazdadjoke.com";
+			//String API_URI = "https://restcountries.eu/rest/v2/name/nepal";
+			String methodType = "GET";
+			String headers = "application/json";
+			GeneralUtils generalUtils = GeneralUtils.getInstance();
+			System.out.println("Waiting for response !!!");
+			String result = generalUtils.server2ServerCall(methodType,API_URI,headers);
+			//System.out.println("result : "+result);
+			
+			if(result != null && result.contains("{"))
+			{
+				JSONParser parser = new JSONParser();
+				JSONObject jsonObject = (JSONObject) parser.parse(result);
+				System.out.println(jsonObject.get("joke"));
+			}
+			else
+			{
+				System.out.println("Oops !!!");
+			}
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception : "+e.fillInStackTrace());
+		}
+
+	}
+
+}
+
+
+
+package com.cgi.util;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+
+public class GeneralUtils {
+	
+	private static GeneralUtils ref= null;
+	
+	private GeneralUtils()
+	{
+		
+	}
+	
+	public static GeneralUtils getInstance()
+	{
+		if(ref == null)
+		{
+			ref = new GeneralUtils();
+		}
+		return ref;
+	}
+	
+	public String server2ServerCall(String method, String spec, String header)
+	{
+		//System.out.println("server2ServerCall");
+		try
+		{
+			URL url = new URL(spec);
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+			conn.setRequestMethod(method);
+			conn.setRequestProperty("Accept", header);
+			conn.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36");
+			//int status = conn.getResponseCode();
+			//System.out.println("status : "+status);
+			BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+			String inputLine;
+			StringBuffer content = new StringBuffer();
+			while ((inputLine = in.readLine()) != null) {
+				content.append(inputLine);
+			}
+			in.close();
+			conn.disconnect();
+			return content.toString();
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception : "+e.fillInStackTrace());
+			return e.getMessage();
+		}
+	}
+
+}
